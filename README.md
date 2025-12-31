@@ -13,15 +13,14 @@
 
 ---
 
-## 🔧 对比方法
+##  对比方法
 
 ### 1. 凸方法（Convex Method）  
 - **实现方式**：随机化 SVD + 软阈值（Soft Thresholding）  
 - **原理**：求解核范数最小化问题：
 
-$$\min_{X} \|X\|_* \quad \text{subject to} \quad \mathcal{P}_{\Omega}(X) = \mathcal{P}_{\Omega}(M)$$,
+$$\min_{X} \|X\|_* \quad ,\text{subject to} \quad \mathcal{P}_{\Omega}(X) = \mathcal{P}_{\Omega}(M)$$
 
-其中 $$\|X\|_*$$ 为核范数，$$\mathcal{P}_{\Omega}$$ 为观测掩码算子。
 - **优点**：理论收敛性有保障；算法稳定  
 - **缺点**：计算成本高，难以捕捉复杂低秩结构
 
